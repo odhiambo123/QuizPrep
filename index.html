@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--
+     Quiz script.
+     Copyright 2013 Google Inc.
+     Written by Michal Nazarewicz <mina86@mina86.com>
+
+     This is not a Google product.
+
+     Licensed under the terms of of Creative Commons Attribution 3.0
+     Unported License which can be found at
+
+         http://creativecommons.org/licenses/by/3.0/deed.en
+
+     or in LICENSE.CC-BY-3 file.
+  -->
+  <head>
+    <title>Flash Cards</title>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="quiz.css" />
+    <script type="text/javascript" src="quiz.js"></script>
+    <style type="text/css">
+      #questions {
+        /* Visible only in print, make sure it's hidden even if CSS
+         * file is not loaded. */
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="questions">
+      <h1>Flash Cards</h1>
+
+      <h2>Intro to Java concepts</h2>
+
+      <p>What JVM?</p>
+      <p>Java Virtual Machine</p>
+
+      <p>What is JRE</p>
+      <p>Java runtime environment, a set of components to create and run a Java application. It is a part of JDK and is made up of JVM, Class libraries and Java class loader. it provides the the programming tools and deployment technologies. JRE runs on top of the OS to provide additional Java resources</p>
+
+      <p>What is JDK</p>
+      <p>Java Development Kit, It implements the Java Language specification, JLS, and Java Virtual Machine specification, JVMS, and provide the standard edition SE of the Java Application Programming Interface.</p>
+
+      <p>What are Methords and Parameters</p>
+      <p>A metod is a block of code which only runs when its called. You can pass data with the method, this data is called parameters. methods are also know as functions</p>
+
+      <p>what is method overloading</p>
+      <p>Ability to create multiple functions or methods with the same name but different implementations</p>
+
+      <p>what is method overriding</p>
+      <p>this is a language feaature that allows a subclass or a child class to provide a specific implementation of a method that is already provided by one of its superclasses or parent class. it allows for a specific kind of polymorphism. the implementation in the subclass overrides the implementation in the superclass. </p>
+
+      <p>What is an Exception</p>
+      <p>
+        An event which occurs during and execution of a program, That disrupts the normal flow of the program's instructions. When an error occurs within a method, the method creates an object and hands it off to the runtime system. This is called Throwwing an Exception. 
+      </p>
+
+      <p>what is control flow</p>
+      <p>The order in which individual statements, instructions or function calls of an iperative program are Executed or evaluated.</p>
+
+      <p>what are primitive types</p>
+      <p>The basic set of data types from which all other data types are constructed int, byte, short, long, float, double, boolean and char. they are further divided into three: floating point, intergral, and character and string literals</p>
+
+      <p>What is Git</p>
+      <p>Sofware for tracking changes in any set of files </p>
+
+      <p>What are Objects in Java</p>
+      <p>They instances of a class that model real world objects; having related behaviors and states. states are stored in fields while behaviors are exposed through mehods</p>
+
+      <p>Encapsulation</p>
+      <p>Hiding all the internals; requiring interaction through methods. Encapsulation ensures that an object remains in control of how its data is used</p>
+
+      <p>Benefits of Objects</p>
+      <p> Modularity, Information hiding, code reuse, plugability and easy fixing</p>
+
+      <p>What is a Class</p>
+      <p>A class is the blueprint from which objects are made.</p>
+
+      <p>Inheritence</p>
+      <p>derivind a class, subclass from a parent class, superclass. in inheritence a class can only have one superclass.</p>
+
+      <p>What is a Package</p>
+      <p>A package is a namespace that organizes related classes. 
+        https://docs.oracle.com/javase/8/docs/api/index.html
+      </p>
+
+      <p>Variables</p>
+      <p> Are containers for storing data values. Instance variables/non-static-variables, Class variables/static fields, Local variables.</p>
+
+      <p>Arrays</p>
+      <p>An array is a container object that holds a fixed number of values of a single type.<br> 
+        https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html
+      
+        <br> <a href="https://gist.github.com/f1399f6e585ffba0fe88e6a41989fe49">creating arrays in java</a>
+        <br>
+      </p>
+
+      <p>Access Modifiers</p>
+      <p>Public declarations are visible everywhere, Default are visible within a package, Protected are visible within
+        it's packacge and subclasses of its class in another package, Private are visible within the class.<br><a
+          href="https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html">Controlling access</a></p>
+
+      <p>What happens after a method throws an exception</p>
+      <p>The runtime attempts to find something to handle it from the methods list that had been called to get to the
+        method where the error occured. the listforms the call stack <br><a
+          href="https://docs.oracle.com/javase/tutorial/essential/exceptions/definition.html">Exception</a> </p>
+
+      <p>what is an exception handler?</p>
+      <p>The block of code in the call stack that can handle a the exception in question</p>
+
+      <p>What is mean by Catching an Exception</p>
+      <p>The Exception handler chosen to appropriately handle the exception is said to have cought the exception.</p>
+
+      <p>Name Three types of exceptions</p>
+      <p>Checked Exceptions - A well written Java code should be able to recover from these exceptions<br>Error - these are normally external to the application and the application cannot anticipate recovering from them, eg system malfunction. Errors are not subject to Catch or specify requirement<br> runtime exceptions are internal to the application and the application cannot anticipate to recover from them. They may include logic errors or improper use of an API. <br> Errors and runtime exceptions are called unchecked exceptions</p>
+
+      <p>What are the exception handler components</p>
+      <p>Try, Catch and Finally Blocks</p>
+
+      <p>Autoclosable</p>
+      <p>Object that may hold resources(such as file or socket handles) until it's closed. <br>The close() method of an
+        Autoclosable object is called automatically when exiting a try-with-resources block for which it the object has
+        been declared in the resource specification header <br><a
+          href="https://docs.oracle.com/javase/tutorial/essential/exceptions/chained.html">Exceptions</a></p>
+
+      <p>Construstors</p>
+      <p>Is a method invoked when the keyword new is used to create an object. </p>
+
+      <p>this Keyword</p>
+      <p>Used is used to refer to the current object. the object whose costructor or method is being called</p>
+
+      <p>List some useful String methods</p>
+      <p><a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html"> docs </a></p>
+
+      
+
+
+      <h2>Collections</h2>
+
+      <p>Collections</p>
+      <p><a href="https://docs.oracle.com/javase/tutorial/collections/"> docs</a><br>
+        A collection is an object tha groups multiple elements together<br>
+        Collections framework is the unified architecture for representing and manipulating collections<br>
+        Collections framework contain:<br>
+        interfaces: abstract data types that represent collections<br>
+        Implementations: concrete implementations of the collections interfaces<br> Algorithms:
+        methods that peform useful computations.<br>
+      </p>
+
+      <p>Different Types of collections</p>
+      <p>Collection(Set(sortedSet), List, Queue, Deque), Map(SortedMap))</p>
+
+      <div>
+        <p>Generics</p>
+        <div><img src="img/puffy.png" alt="Puffy" /></div>
+      </div>
+      <p>Generics Enables types (clases and interfaces) to be parameters when defining clases, interfaces and methods. It enable stronger type checks during compile time, Eliminates casting, Enables implementation of generic algorithms typesafe algorithms.</p>
+
+      <div>
+        <p>Autoboxing/Autounboxing</p>
+        <div><img src="img/tux-with-pipe.jpg" alt="Tux smoking a pipe" /></div>
+      </div>
+      <p>Compiler create objects or primitives wherever necessary during compile time. for example: converting and int
+        to its wrapper object, integer<br>The Java compiler applies autoboxing when a primitive value is:<br>
+
+        Passed as a parameter to a method that expects an object of the corresponding wrapper class.<br>
+        Assigned to a variable of the corresponding wrapper class</p>
+
+      <p></p>
+      <p></p>
+
+      <div>
+        <p></p>
+        <div><img src="img/beastie.png" alt="Beastie" /></div>
+      </div>
+      <p></p>
+
+
+      <h2>Kotlin</h2>
+
+      <div>
+        <p>Kotlin Benefits</p>
+        <div><img src="img/Kotlin_benefits.PNG" alt="Kotlin Benefits Image" /></div>
+      </div>
+      <p></p>
+
+      <div>
+        <p>Kotlin Basic Syntax</p>
+        <div><img src="img/Basic_syntax.PNG" alt="Kotlin bassic syntax" /></div>
+      </div>
+      <p></p>
+
+      <div>
+        <p>Kotlin Data Types</p>
+        <div><img src="img/Data_types.PNG" alt="KotlinData types" /></div>
+      </div>
+      
+      <p>smallest unit representing the transistor state of on or off <br>
+      Byte - 8 bits<br> Short - 16 bits <br> int -32 bits<br> long - 64 bits </p>
+
+      <p>Conditionals</p>
+      <p>
+        <a href="https://gist.github.com/ac7565819bd31ff2a9ddb55764058d16">Conditionals Demo</a>
+      </p>
+
+      <p>Arrays </p>
+      <p>Arrays are used to store multiple values instead of having separate variable to each one <br> val cars = arrayOf("volvo","bmw","toyota")<br>
+      Kotlin also provides primitive type arrays ByteArray, ShortArray, IntArray, and so on</p>
+
+      <p>Variable </p>
+      <p>Immutable -cannot change val<br>Mutable can change var</p>
+
+      <p>Operators in Kotlin</p>
+      <p><a href="https://kotlinlang.org/docs/keyword-reference.html#operators-and-special-symbols">docs</a></p>
+
+      <p>function()</p>
+      <p>A block of code which only runs when its called and are used to perform certain actions</p>
+
+      <p>Nullability</p>
+      <p>The type system distinguishes between refference that can hold null and those that can't. to allow nulls use '?', String?. to use a nullable refference, you can check if it's null by using an if statement or an Elvis operator. <br>To throw an NPE, use a not-null operator (!!). to return a non null value or NPE<br></p>
+
+      <div>
+        <p>Class</p>
+        <div><img src="img/class_declaration.PNG" alt="Class declaration" /></div>
+      </div>
+      <p>User defined Data structure. <br>
+        The class declaration consists of the class name, the class header (specifying its type parameters, the primary
+        constructor etc.) and the class body, surrounded by curly braces. Both the header and the body are optional; if
+        the class has no body, curly braces can be omitted.</p>
+
+      <p>Object</p>
+      <p>an instance of a class</p>
+
+      <p></p>
+      <p>
+        
+      
+      </p>
+
+
+      <h2>Misc</h2>
+
+      <p>When did the initial release of Linux happen?  Give month and
+      year.</p>
+      <p>The initial Linux release happened on September 1991.</p>
+
+      <p>Which year Linus Torvalds was born.</p>
+      <p>Linus Torvalds was born on the year of Moon landing,
+      1969.</p>
+
+      <p>What is the name of a 16-bit microcomputer which was the
+      first architecture BSD system run on.</p>
+      <p>PDP-11.</p>
+
+      <div>
+        <p>What's the Linux-based machine which competed in 2011 on
+        Jeopardy against Brad Rutter and Ken Jennings winning the
+        first prize of $1 million.</p>
+        <div><img src="img/watson.jpg" alt="Watson's avatar" /></div>
+      </div>
+      <p>It's IBM's Watson.</p>
+
+      <p>Lack of access to the source code of the software controlling
+      which printer convinced Richard Stallman of importance of
+      people's freedom to study, modify and use software?</p>
+      <p>Xerox 9700.</p>
+    </div>
+  </body>
+</html>
