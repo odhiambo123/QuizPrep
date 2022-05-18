@@ -377,25 +377,6 @@
 
       <p>What are stored procedures</p>
       <p>functions in SQL</p>
-
-      <p></p>
-      <p></p>
-
-      <p></p>
-      <p></p>
-
-      <p></p>
-      <p></p>
-
-      <p></p>
-      <p></p>
-
-      <p></p>
-      <p></p>
-
-      <p></p>
-      <p></p>
-
       <h2>Data Structures</h2>
       <p>What is an m-ary tree</p>
       <p>In graph theory, an m-ary tree (also known as k-ary or k-way tree) is a rooted tree in which each node has no
@@ -408,34 +389,51 @@
         of a
         root, internal nodes and leaves.<br> The root may be either a leaf or a node with two or more children.</p>
 
-      <p></p>
-      <p></p>
+      <h2>App Architecture</h2>
+      <p>What is App architecture</p>
+      <p>App architecture defines the boundaries between parts of the app and the responsibilities each part should have
+      </p>
+      <P>Separation of concerns</P>
+      <p>Helps to keep code clean and to stay away from problems related to life cycle<br>
+        Keep the UI layer separate from Logic and data layer</p>
 
-      <p></p>
-      <p></p>
+      <p>Driving UI from Data Models</p>
+      <p>Data models represent the app data and are independent of the UI</p>
+
+        <p>UI Layer</p>
+        <p>representation layer for user interaction<br>
+          • UI elements that render the data on the screen. You build these elements
+          using Views or Jetpack Compose functions.<br>
+          • State holders (such as ViewModel classes) that hold data, expose it to the UI,
+          and handle logic. </p>
+        <p>Data Layer</p>
+        <p> The data layer is made of repositories that each can contain zero to
+          many data sources. <br>You should create a repository class for each
+          different type of data you handle in your app. <br>For example, you might
+          create a MoviesRepository class for data related to movies.<br> PaymentsRepository class for data related to
+          payments</p>
+
+          <p>Dependencies</p>
+          <p>Classes in the app depend on other classes for proper functioning</p>
+
+          <p>Dependency Injection(DI)</p>
+          <P>Taking the dependencies of a class ans providing them rather thatn having the class instance obtain them
+            itself.<br><a href="https://developer.android.com/training/dependency-injection">Docs</a> </P>
+
+            <p>Service Locator</p>
+            <p> in this method, registry is provided where classes can obtain their dependencies rather than
+              constructing them.</p>
+
+              <p>How do you reduce dependencies on classes</p>
+              <p>By making sure your app components are the only clasesrelying on Android framework SDK APIs such as
+                Context or Toast<br>
+                Abstracting other classes in your app away from them helps with testability and reduces coupling within
+                app</p>
+
+                <p>What is MVVM</p>
+                <P>Models Views ViewModel</P>
 
       <h2>Android Studio</h2>
-
-      <p></p>
-      <p></p>
-
-      <p></p>
-      <p></p>
-
-      <p></p>
-      <p></p>
-
-<p></p>
-<p></p>
-
-      <p></p>
-      <p></p>
-
-      <p></p>
-      <p></p>
-
-      <p></p>
-      <p></p>
     </div>
   </body>
 </html>
