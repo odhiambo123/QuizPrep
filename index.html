@@ -444,9 +444,213 @@
                   its parent<br> The child can only expose some databy allowing it to be observedthrough LiveData or any
                   other library. </P>
 
-      <h2>Android Studio</h2>
-      <h2>Room</h2>
-      <p></p>
+      <h2>Android Daily Quiz</h2>
+      <p>
+        what are the layouts available in android?
+      </p>
+      <p>
+        LinearLayout, RelativeLayout, ListView, GridView, AbsoluteLayout, WebView, ConstraintLayout, FrameLayout,
+        ContentLayout, TableLayout, TableRow, etc.
+      </p>
+
+      <p>
+        what is the purpose of layouts?
+      </p>
+      <p>
+        Layouts are used to arrange the views in the screen.
+      </p>
+
+
+      <p>
+        If the UI begins to behave slugishly or crash while making network calls, this is likely due tio...?
+      </p>
+      <p>
+        Network Latency
+      </p>
+
+
+      <p>
+        What is the purpose of the View?
+      </p>
+      <p>
+        The View is the main component of the UI. It is the container for the UI elements.
+      </p>
+
+      <p>
+        name the dialog clases in android
+      </p>
+      <p>
+        AlertDialog, ProgressDialog, Dialog, DialogFragment, DialogFragment, AlertDialogFragment, etc.
+      </p>
+
+      <p>
+        the XML File that containe the test that your application uses
+      </p>
+      <p>
+        res/values/strings.xml
+      </p>
+
+      <p>
+        If you want to share data between activities, you can use the following classes:
+      </p>
+      <p>
+        Intent, IntentFilter, IntentSender, IntentService, PendingIntent, PendingIntent.getActivity,
+      </p>
+
+      <p>
+        Which permission you need to declare in your AndroidManifest.xml file for sending SMS.
+      </p>
+      <p>
+        android.permission.SEND_SMS
+        <user-permission android:name="android.permission.SEND_SMS" />
+      </p>
+      <p>
+        For Creating your own content provider which class you will inherit?
+      </p>
+      <p>
+        ContentProvider
+      </p>
+
+      <p>
+        Suppose that there are two activities in an application named FirstActivity and SecondActivity. You want to send
+        website name from ActivityOne to ActivityTwo. What code you will write? Suppose that website name is
+        “Career.com”
+      </p>
+
+      <p>
+        Intent intent=new Intent (this, SecondActivity.class);
+        intent.putExtra("name", “Career.com”);
+        startActivity(intent);<br>
+
+        Intent intent = new Intent(Intent.ACTION_SEND);<br>
+        intent.setType("text/plain");<br>
+        intent.putExtra(Intent.EXTRA_TEXT, "Career.com");<br>
+        startActivity(intent);
+      </p>
+
+      <p>
+        In android mini-activities are also known as
+
+      </p>
+      <p>
+        Fragments
+      </p>
+
+      <p>
+        If you want to navigate from one activity to another then android provides you which class?
+      </p>
+      <p>
+        Intent
+      </p>
+
+      <p>
+        The Log class supports which log types?
+      </p>
+      <p>
+        verbose, debug, info, warning, error, fatal
+      </p>
+
+      <p>
+        What is the permission for using the camera?
+      </p>
+
+      <p>
+        android.permission.CAMERA
+      </p>
+
+      <p>
+        Suppose that there are two activities in an application named ActivityOne and ActivityTwo. You want to invoke
+        ActivityTwo from ActivityOne. What code you will write
+      </p>
+      <p>
+        Intent intent=new Intent (this, ActivityTwo.class);
+        startActivity(intent);
+      </p>
+
+      <p>
+        Which class is used to access to the system location services?
+      </p>
+      <p>
+        LocationManager
+      </p>
+
+      <p>
+        If you have used the Google Maps API into your Android application but it does not show the map when the
+        application is loaded, what could be the possible reasons?
+      </p>
+      <p>
+        Internet connection is not working
+        Incorrect placement in the AndroidManifest.xml file
+        Incorrect Google Maps API key
+        missing internet permission in the AndroidManifest.xml file
+        etc.
+      </p>
+
+      <p>
+        Which class is used to send SMS programmatically?
+
+      </p>
+      <p>
+        SmsManager
+      </p>
+
+      <p>
+        Which class is used to send email programmatically?
+      </p>
+      <p>
+        android.util.Email
+      </p>
+
+      <p>
+        Which class is used to send a notification?
+      </p>
+      <p>
+        NotificationManager
+      </p>
+
+      <p>
+        What is the purpose of the ImageSwitcher?
+
+      </p>
+      <p>
+        The ImageSwitcher is used to switch between images.
+        Enables images to be displayed in a view hierarchy.
+        enable images to be displayed with animation
+        allows you to add transitions between images
+      </p>
+
+      <p>
+        What types of menus is/are supported by Android?
+      </p>
+      <p>
+        ContextMenu, PopupMenu, ActionBar, etc.
+      </p>
+
+      <p>
+
+      </p>
+      <p>
+
+      </p>
+
+      <h2>Algo</h2>
+      <p>Write a Kotlin function that return a fibonacci number</p>
+      <p>
+        fun main() {
+        fun fibonacci(): Sequence<Int> {
+          return generateSequence(
+          Pair(0, 1),
+          {
+          Pair(it.second, it.first + it.second)
+          }
+          ).map { it.first }
+          }
+
+          println(fibonacci().take(5).toList()) // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+
+          }
+
+      </p>
     </div>
   </body>
 </html>
